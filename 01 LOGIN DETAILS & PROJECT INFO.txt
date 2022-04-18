@@ -1,0 +1,11 @@
+**Database Name: hotelms**
+
+**Developed by Naimul karim**
+
+**Recommended PHP Version 5.6.3 and 7.4.12**
+
+
+**Login Details**
+
+username: naimulkarim8965@gmail.com
+password: 201452064
