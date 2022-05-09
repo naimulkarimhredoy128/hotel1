@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hotel Moon Valley </title>
+    <title>Hotel Management System- Dashboard</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/datepicker3.css" rel="stylesheet">
@@ -22,7 +22,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="index.php?dashboard"><span>Hotel </span>Moon Valley</a>
+            <a class="navbar-brand" href="index.php?dashboard"><span>Hotel </span>Management System</a>
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                         <em class="fa fa-user"></em>

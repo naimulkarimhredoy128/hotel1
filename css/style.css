@@ -8,7 +8,7 @@ html, body{
 	margin:0;
 	font-size: 100%;
 	font-family: 'Lato', sans-serif;
-	background: orange;
+	background: #fff;
 }
 body a {
 	text-decoration:none;
@@ -131,7 +131,7 @@ ul.social-icons3 {
     -ms-transition: 0.5s all;
 }
 .contact-bnr-w3-agile ul li i {
-       color: red;
+       color: #000000;
     font-size: 16px;
     margin-right: 15px;
 }
@@ -141,7 +141,7 @@ ul.social-icons3 {
 	border-left:1px solid #ffce14;
 }
 .search label.icon-search {
-    color: red;
+    color: #212121;
 	cursor: pointer;
 }
 .search_form{
@@ -177,7 +177,7 @@ ul.social-icons3 {
 .search_form input[type='submit'] {
     outline: none;
     display: inline-block;
-    color: red;
+    color: #fff;
     font-size: 14px;
     letter-spacing: .5px;
     background: #0f2453;
@@ -216,7 +216,7 @@ label.icon-search span {
 /*--//search--*/
 /*-- nav --*/
 .w3_navigation {
-    background: orange ;
+    background: #0f2453 ;
 }
 .navbar-default {
     background: none;
@@ -232,7 +232,7 @@ label.icon-search span {
     margin-right: 0;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color:red;
+    color:#fff;
     background:none;
 }
 .navbar-default .navbar-nav > li > a {
@@ -256,11 +256,11 @@ nav.navbar.navbar-default {
     padding: .9em 0 .4em 0;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    color:indianreds;
+    color:#fff;
     background: none;
 }
 .navbar-default .navbar-nav > li > a {
-    color: blue;
+    color: #fff;
 }
 .navbar-default .navbar-nav  > .active.open > a:focus {
 	background: #0a9dbd;

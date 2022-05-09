@@ -352,6 +352,121 @@ $('#checkOutRoom_n').submit(function () {
 
 });
 
+$('#addEmployee').submit(function () {
+
+    var staff_type = $('#staff_type').val();
+    var shift = $('#shift').val();
+    var first_name = $('#first_name').val();
+    var last_name = $('#last_name').val();
+    var contact_no = $('#contact_no').val();
+    var id_card_id = $('#id_card_id').val();
+    var id_card_no = $('#id_card_no').val();
+    var address = $('#address').val();
+    var salary =$('#salary').val();
+
+    console.log(staff_type+shift);
+    $.ajax({
+        type: 'post',
+        url: 'ajax.php',
+        dataType: 'JSON',
+        data: {
+            staff_type:staff_type,
+            shift:shift,
+            first_name:first_name,
+            last_name:last_name,
+            contact_no:contact_no,
+            id_card_id:id_card_id,
+            id_card_no:id_card_no,
+            address:address,
+            salary:salary,
+            add_employee:''
+
+        },
+        success: function (response) {
+            if (response.done == true){
+                document.getElementById("addEmployee").reset();
+                $('.emp-response').html('<div class="alert bg-success alert-dismissable" role="alert"><em class="fa fa-lg fa-warning">&nbsp;</em>Employee Successfully Added</div>');
+            }else{
+                $('.emp-response').html('<div class="alert bg-danger alert-dismissable" role="alert"><em class="fa fa-lg fa-warning">&nbsp;</em>' + response.data + '</div>');
+            }
+        }
+    });
+
+    return false;
+});
+
+$('#edit_employee').submit(function () {
+
+    var staff_type = $('#staff_type').val();
+    var shift = $('#shift').val();
+    var first_name = $('#first_name').val();
+    var last_name = $('#last_name').val();
+    var contact_no = $('#contact_no').val();
+    var id_card_id = $('#id_card_id').val();
+    var id_card_no = $('#id_card_no').val();
+    var joining_date = $('#joining_date').val();
+    var address = $('#address').val();
+    var salary =$('#salary').val();
+
+//alert(first_name);
+    $.ajax({
+        type: 'post',
+        url: 'ajax.php',
+        dataType: 'JSON',
+        data: {
+            staff_type:staff_type,
+            shift:shift,
+            first_name:first_name,
+            last_name:last_name,
+            contact_no:contact_no,
+            id_card_id:id_card_id,
+            id_card_no:id_card_no,
+            joining_date:joining_date,
+            address:address,
+            salary:salary,
+            add_employee:'',
+
+        },
+        success: function (response) {
+            alert("Employee Added Successfully");
+            document.getElementById("add_employee").reset();
+            /* if (response.done == true) {
+             $('#getCustomerName').html(first_name+' '+last_name);
+             $('#getRoomType').html(room_type);
+             $('#getRoomNo').html(room_no);
+             $('#getCheckIn').html(check_in_date);
+             $('#getCheckOut').html(check_out_date);
+             $('#getTotalPrice').html(total_price);
+             $('#getPaymentStaus').html("Unpaid");
+             $('#bookingConfirm').modal('show');
+             document.getElementById("booking").reset();
+             } else {
+             $('.response').html('<div class="alert bg-danger alert-dismissable" role="alert"><em class="fa fa-lg fa-warning">&nbsp;</em>' + response.data + '</div>');
+             }*/
+
+        }
+    });
+
+    return false;
+});
+
+$(document).on('click', '#complaint', function (e) {
+    e.preventDefault();
+
+    var complaint_id = $(this).data('id');
+    console.log(complaint_id);
+    $('#complaint_id').val(complaint_id);
+
+});
+
+$(document).on('click', '#change_shift', function (e) {
+    e.preventDefault();
+
+    var emp_id = $(this).data('id');
+    console.log(emp_id);
+    $('#getEmpId').val(emp_id);
+
+});
 
 
 
