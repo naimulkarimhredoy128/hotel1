@@ -17,7 +17,7 @@
             <li class="active">
                 <a href="index.php?dashboard"><em class="fa fa-dashboard">&nbsp;</em>
                     Dashboard
-                </a>
+        </a>
             </li>
         <?php } else{?>
             <li>
